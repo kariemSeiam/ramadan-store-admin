@@ -1,43 +1,49 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>متجر رمضان | هدايا رمضان</title>
-    <meta name="title" content="متجر رمضان | هدايا رمضان" />
-    <meta name="description" content="تسوق هدايا رمضان المميزة بما في ذلك سجادات الصلاة، المصاحف، والسبحات. توصيل سريع لجميع مناطق القاهرة." />
+    <title>WA Bulk | واتساب بالك</title>
+    <meta name="title" content="WA Bulk | واتساب بالك" />
+    <meta name="description" content="أداة احترافية لإدارة رسائل الواتساب التسويقية. أرسل رسائل مخصصة لعملائك بسهولة وفعالية." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kariemseiam.github.io/ramadan-store-admin/" />
-    <meta property="og:title" content="متجر رمضان | هدايا رمضان" />
-    <meta property="og:description" content="تسوق هدايا رمضان المميزة بما في ذلك سجادات الصلاة، المصاحف، والسبحات. توصيل سريع لجميع مناطق القاهرة." />
-    <meta property="og:image" content="https://kariemseiam.github.io/ramadan-store-admin/" /> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://kariemseiam.github.io/wa-bulk/" />
+    <meta property="og:title" content="WA Bulk | واتساب بالك" />
+    <meta property="og:description" content="أداة احترافية لإدارة رسائل الواتساب التسويقية. أرسل رسائل مخصصة لعملائك بسهولة وفعالية." />
+    <meta property="og:image" content="https://kariemseiam.github.io/wa-bulk/preview.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://kariemseiam.github.io/ramadan-store-admin/" />
-    <meta property="twitter:title" content="متجر رمضان | هدايا رمضان" />
-    <meta property="twitter:description" content="تسوق هدايا رمضان المميزة بما في ذلك سجادات الصلاة، المصاحف، والسبحات. توصيل سريع لجميع مناطق القاهرة." />
-    <meta property="twitter:image" content="https://kariemseiam.github.io/ramadan-store-admin/" /> <!-- Replace with actual image URL -->
+    <meta property="twitter:url" content="https://kariemseiam.github.io/wa-bulk/" />
+    <meta property="twitter:title" content="WA Bulk | واتساب بالك" />
+    <meta property="twitter:description" content="أداة احترافية لإدارة رسائل الواتساب التسويقية. أرسل رسائل مخصصة لعملائك بسهولة وفعالية." />
+    <meta property="twitter:image" content="https://kariemseiam.github.io/wa-bulk/preview.png" />
 
     <!-- Additional SEO Meta Tags -->
-    <meta name="keywords" content="متجر رمضان, هدايا رمضان, سجادات الصلاة, مصاحف, سبحات, هدايا إسلامية" />
+    <meta name="keywords" content="واتساب بالك, إرسال رسائل واتساب, تسويق واتساب, رسائل مخصصة, أداة تسويق, whatsapp marketing, bulk messages" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="Arabic" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="author" content="متجر رمضان" />
+    <meta name="revisit-after" content="3 days" />
+    <meta name="author" content="Kariem Seiam" />
 
-    <!-- Locale and Geographic Meta Tags -->
-    <meta name="geo.region" content="EG-C" />
-    <meta name="geo.placename" content="Cairo" />
-    <meta name="geo.position" content="30.0444;31.2357" />
-    <meta name="ICBM" content="30.0444, 31.2357" />
+    <!-- Application Meta Tags -->
+    <meta name="application-name" content="WA Bulk" />
+    <meta name="theme-color" content="#1F2937" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WA Bulk" />
 
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+    <link rel="mask-icon" href="/icon.svg" color="#1F2937" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,6 +53,34 @@
     <style>
       body {
         font-family: 'Noto Kufi Arabic', sans-serif;
+        background-color: #111827;
+        color: #ffffff;
+      }
+
+      /* Loading state styles */
+      #root:empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to bottom right, #111827, #1F2937);
+      }
+
+      #root:empty::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 4px solid #374151;
+        border-top-color: #60A5FA;
+        border-radius: 50%;
+        animation: loading 0.75s infinite linear;
+      }
+
+      @keyframes loading {
+        to {
+          transform: rotate(360deg);
+        }
       }
     </style>
   </head>
